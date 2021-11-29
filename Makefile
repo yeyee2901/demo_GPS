@@ -7,7 +7,7 @@ all:
 clean:
 	${PLATFORMIO} vim run -t clean
 
-upload:
+upload: all
 	${PLATFORMIO} vim run -t upload
 
 uploadfs:

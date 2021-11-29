@@ -64,9 +64,12 @@ void setup() {
   init_GPS();
 }
 
-void loop() { show_GPS_location(); }
+void loop() {
 
-//--------------------------------------------------------------------
+  show_GPS_location();
+
+  // do something else
+}
 
 // FUNCTION DECLARATIONS ---------------------------------------------
 // LCD --------------------------------------------
@@ -75,6 +78,7 @@ void init_LCD() {
   {
     delay(5000);
   }
+  lcd.clear();
 }
 
 // SIM868 -----------------------------------------
@@ -208,7 +212,7 @@ void init_GPS() {
     }
 
     lcd.setCursor(0, 3);
-    lcd.print("Retry until fix..");
+    lcd.print("Retrying until fix..");
     delay(3000);
   }
 }
@@ -316,4 +320,5 @@ void update_serial_buffer() {
 void rapikan_SIM_response() {
   SIM_response.replace("\r", "");
   SIM_response.replace("\n", " ");
+  SIM_response.trim();
 }
