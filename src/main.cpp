@@ -203,7 +203,7 @@ void init_GPS() {
     delay(3000);
 
     // if loc status = 2D or 3D Fix, break the loop
-    if (GPS_loc_status.indexOf("D Fix") >= 0){
+    if (GPS_loc_status.indexOf("D Fix") >= 0) {
       break;
     }
 

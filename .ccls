@@ -1,23 +1,23 @@
 clang
 
-%c -std=gnu11 -fno-fat-lto-objects -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p
-%cpp -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p
+%c -std=gnu11 -fno-fat-lto-objects -Wall -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p
+%cpp -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Wall -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p
 
--I/home/yeyee2901/Documents/EmbeddedSystem/PlatformIO/demo_GPS/include
--I/home/yeyee2901/Documents/EmbeddedSystem/PlatformIO/demo_GPS/src
--I/home/yeyee2901/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src
--I/home/yeyee2901/Documents/EmbeddedSystem/PlatformIO/demo_GPS/.pio/libdeps/uno/LiquidCrystal_I2C/src
--I/home/yeyee2901/.platformio/packages/framework-arduino-avr/libraries/Wire/src
--I/home/yeyee2901/.platformio/packages/framework-arduino-avr/cores/arduino
--I/home/yeyee2901/.platformio/packages/framework-arduino-avr/variants/standard
--I/home/yeyee2901/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src
--I/home/yeyee2901/.platformio/packages/framework-arduino-avr/libraries/HID/src
--I/home/yeyee2901/.platformio/packages/framework-arduino-avr/libraries/SPI/src
--I/home/yeyee2901/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include-fixed
--I/home/yeyee2901/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include
--I/home/yeyee2901/.platformio/packages/toolchain-atmelavr/avr/include
+-I/home/yeyee/Documents/Project/LabInstrumen/Board-GPS/include
+-I/home/yeyee/Documents/Project/LabInstrumen/Board-GPS/src
+-I/home/yeyee/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src
+-I/home/yeyee/Documents/Project/LabInstrumen/Board-GPS/.pio/libdeps/uno/LiquidCrystal_I2C/src
+-I/home/yeyee/.platformio/packages/framework-arduino-avr/libraries/Wire/src
+-I/home/yeyee/.platformio/packages/framework-arduino-avr/cores/arduino
+-I/home/yeyee/.platformio/packages/framework-arduino-avr/variants/standard
+-I/home/yeyee/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src
+-I/home/yeyee/.platformio/packages/framework-arduino-avr/libraries/HID/src
+-I/home/yeyee/.platformio/packages/framework-arduino-avr/libraries/SPI/src
+-I/home/yeyee/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include-fixed
+-I/home/yeyee/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include
+-I/home/yeyee/.platformio/packages/toolchain-atmelavr/avr/include
 
--DPLATFORMIO=50101
+-DPLATFORMIO=50203
 -DARDUINO_AVR_UNO
 -DF_CPU=16000000L
 -DARDUINO_ARCH_AVR
